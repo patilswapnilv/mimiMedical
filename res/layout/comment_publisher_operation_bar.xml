@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:background="@drawable/v5_0_1_publisher_buttons_area_bg" >
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:layout_marginLeft="6.0dip"
+        android:button="@drawable/v5_0_1_check_box"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:maxWidth="180.0dip"
+        android:minWidth="180.0dip"
+        android:paddingLeft="23.0dip"
+        android:singleLine="true"
+        android:text="@string/whisper_text"
+        android:textColor="#ff000000"
+        android:textSize="14.0sp"
+        android:visibility="gone" />
+
+    <ImageView
+    	android:id="@+id/image_view_publish_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_publisher_button_bg"
+        android:focusable="true"
+        android:minWidth="36.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/v5_0_1_publisher_voice_button" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_publisher_button_bg"
+        android:focusable="true"
+        android:minWidth="36.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/v5_0_1_publisher_poi_button_on"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_publisher_button_bg"
+        android:focusable="true"
+        android:minWidth="36.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/v5_0_1_publisher_image_button"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_publisher_button_bg"
+        android:focusable="true"
+        android:minWidth="36.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/v5_0_1_publisher_at_button"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@drawable/v5_0_1_publisher_button_bg"
+        android:focusable="true"
+        android:minWidth="36.0dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/v5_0_1_publisher_emotion_button" />
+
+</LinearLayout>

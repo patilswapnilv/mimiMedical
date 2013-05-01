@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_top"
+        layout="@layout/top_comment" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_top"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip" >
+
+                <ImageView
+                    android:id="@+id/image_view_head"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:src="@drawable/v5_0_1_widget_default_head" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8.0dip"
+                        android:text="sdgdghf萨克管好大夫管理的快速减肥两个东方航空的河水归河但是两个好大夫联合国大使官邸风格好大夫看来"
+                        android:textColor="@color/v5_0_1_light_gray" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/image_view_time_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/v5_0_1_newsfeed_popupwindow_type_status_icon" />
+
+                        <TextView
+                            android:id="@+id/text_view_time_content"
+                            style="@style/v5_0_1_newsfeed_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dip"
+                            android:layout_toRightOf="@+id/image_view_time_icon"
+                            android:text="昨天08:06" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="4.0dip"
+                android:background="@drawable/v5_0_1_newsfeed_comment_count_background"
+                android:orientation="vertical"
+                android:paddingBottom="8.0dip"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:paddingTop="12.0dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="17.0dp"
+                        android:layout_height="17.0dp"
+                        android:src="@drawable/v5_0_1_action_comment" />
+
+                    <TextView
+                        android:id="@+id/button_comment_count"
+                        style="@style/v5_0_1_newsfeed_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4.0dip"
+                        android:background="@null"
+                        android:text="176条评论" />
+                </LinearLayout>
+
+                <mimi.viewcontroller.MyListView
+                    android:id="@+id/listview_view_content_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:animationCache="false"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="@color/transparent"
+                    android:scrollingCache="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/add_comment_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="44.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/v5_0_1_bottom_gray_background"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <Button
+            android:id="@+id/add_comment_button"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/v5_0_1_edittext_bg"
+            android:gravity="left|center"
+            android:paddingLeft="8.0dip"
+            android:text="@string/comment_btn"
+            android:textColor="@color/activity_from"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

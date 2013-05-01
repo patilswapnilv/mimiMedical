@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+   	android:layout_alignParentTop="true"
+    android:background="@drawable/v5_0_1_flipper_head_blue_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+    	android:clickable="true"
+    	android:focusable="true"
+    	android:background="@drawable/selector_top"
+        android:id="@+id/layout_open_user_console"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/image_view_open"
+            android:layout_width="28dip"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/v5_0_1_flipper_head_flip" />
+    </RelativeLayout>
+
+    <ImageView
+    	android:id="@+id/image_view_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/layout_open_user_console"
+        android:background="@drawable/v5_0_1_flipper_head_separator" >
+    </ImageView>
+    
+  	<RelativeLayout
+  		android:id="@+id/layout_open_profile"
+        android:layout_toRightOf="@+id/image_view_separator"
+        android:background="@drawable/selector_top"
+        android:clickable="true"
+    	android:focusable="true"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+        <TextView
+        	android:text="新信息"
+        	android:layout_width="50dip"
+        	android:layout_height="50dp"
+        	android:gravity="center"
+        	android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+        <ImageView
+        	android:layout_width="10dip"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/v5_0_1_flipper_head_title_corner" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/layout_checkin"
+        android:clickable="true"
+    	android:focusable="true"
+    	android:background="@drawable/selector_top"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/image_view_checkin"
+            android:layout_width="28dip"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/v5_0_1_flipper_head_checkin" />
+    </RelativeLayout>
+    
+   	<RelativeLayout
+        android:id="@+id/layout_post"
+        android:clickable="true"
+    	android:focusable="true"
+    	android:background="@drawable/selector_top"
+        android:layout_toLeftOf="@+id/layout_checkin"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/image_view_post"
+            android:layout_width="28dip"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/v5_0_1_widget_button_status" />
+    </RelativeLayout>
+    
+   	<RelativeLayout
+        android:id="@+id/layout_camera"
+        android:clickable="true"
+    	android:focusable="true"
+    	android:background="@drawable/selector_top"
+        android:layout_toLeftOf="@+id/layout_post"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/image_view_camera"
+            android:layout_width="28dip"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/v5_0_1_flipper_head_camera" />
+    </RelativeLayout>
+
+</RelativeLayout>

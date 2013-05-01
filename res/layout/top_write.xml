@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+   	android:layout_alignParentTop="true"
+    android:background="@drawable/v5_0_1_flipper_head_blue_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+    	android:clickable="true"
+    	android:focusable="true"
+    	android:background="@drawable/selector_top"
+        android:id="@+id/layout_back_comment"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/image_view_comment"
+            android:layout_width="28dip"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/v5_0_1_flipper_head_back" />
+    </RelativeLayout>
+
+    <ImageView
+    	android:id="@+id/image_view_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/layout_back_comment"
+        android:background="@drawable/v5_0_1_flipper_head_separator" >
+    </ImageView>
+    
+    <RelativeLayout
+        android:layout_toRightOf="@+id/image_view_separator"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+        <TextView
+        	android:text="@string/user_action_comment"
+        	android:textColor="@color/white"
+            android:layout_width="28dip"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    
+   	<RelativeLayout
+        android:id="@+id/layout_writecomment_publish"
+        android:clickable="true"
+    	android:focusable="true"
+    	android:background="@drawable/selector_top"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dip"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/image_view_writecomment_publish"
+            android:layout_width="28dip"
+            android:layout_height="28dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/v5_0_1_flipper_head_publish" />
+    </RelativeLayout>
+
+</RelativeLayout>
